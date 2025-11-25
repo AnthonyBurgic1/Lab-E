@@ -1,0 +1,27 @@
+/* Base styling for the SVG element */
+svg {
+    width: 300px;
+    height: 150px;
+    border: 1px solid #ccc;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Default rectangle styling */
+rect {
+    fill: steelblue;
+    transition: fill 0.4s ease; /* Smooth color fade */
+    cursor: pointer;
+}
+
+/* Default :active rule (JavaScript will overwrite this) */
+rect:active {
+    fill: orange;
+}
+
+/* Text styling */
+text {
+    font-size: 20px;
+    fill: white;
+    pointer-events: none; /* click-through to rect */
+}
